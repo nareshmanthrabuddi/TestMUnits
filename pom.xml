@@ -24,7 +24,7 @@
 		<plugin>
 		  <groupId>org.mule.tools.maven</groupId>
 		  <artifactId>mule-maven-plugin</artifactId>
-		  <version>3.9.0</version>
+		  <version>3.9.1</version>
 		  <configuration>
 		      <deploymentType>cloudhub</deploymentType>
 		       <!-- muleVersion is the runtime version as it appears on the CloudHub interface -->
