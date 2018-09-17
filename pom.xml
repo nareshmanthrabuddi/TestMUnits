@@ -204,6 +204,12 @@
             <version>${munit.version}</version>
             <scope>test</scope>
         </dependency>
+	        <!-- https://mvnrepository.com/artifact/org.mule/mule-core -->
+	<dependency>
+	    <groupId>org.mule</groupId>
+	    <artifactId>mule-core</artifactId>
+	    <version>3.9.0</version>
+	</dependency>
     </dependencies>
 
 	<repositories>
