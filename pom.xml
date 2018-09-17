@@ -28,11 +28,12 @@
 		  <configuration>
 		      <deploymentType>cloudhub</deploymentType>
 		       <!-- muleVersion is the runtime version as it appears on the CloudHub interface -->
-		        <muleVersion>3.9.1</muleVersion>
+		       <muleVersion>3.8.4</muleVersion>
 		        <username>naresh_m</username>
 		        <password>Whishworks12!@</password>
 		        <redeploy>true</redeploy>
 		        <environment>Production</environment>
+		        <workerType>Micro</workerType>
 		    </configuration>
 		    <executions>
 		        <execution>
