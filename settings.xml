@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+  <!-- localRepository
+   | The path to the local repository maven will use to store artifacts.
+   |
+   | Default: ${user.home}/.m2/repository
+   -->
+  <localRepository>C:/Users/nmanthrabuddi/.m2/repository</localRepository>
+
+  <servers>
+    <server>
+      <id>MuleRepository</id>
+      <username>naresh_m</username>
+      <password>Whishworks12!@</password>
+    </server>
+  </servers>
+  <pluginGroups>
+    <pluginGroup>org.mule.tools</pluginGroup>
+  </pluginGroups>
+  <profiles>
+    <profile>
+      <id>mule-extra-repos</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <repositories>
+        <repository>
+          <id>mule-public</id>
+          <url> https://repository.mulesoft.org/nexus/content/repositories/public </url>
+        </repository>
+     
+     <repository>
+       <id>Codehaus repository</id>
+       <name>codehaus-mule-repo</name>
+       <url>https://repository-master.mulesoft.org/nexus/content/groups/public/
+       </url>
+       <layout>default</layout>
+     </repository>
+	 <repository>
+   <id>ibiblio-mule</id>
+   <name>ibiblio Mule dependencies</name>
+   <url>http://mirrors.ibiblio.org/maven/mule/dependencies/maven2</url>
+   <layout>default</layout>
+</repository>
+   </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>mule-public</id>
+          <url> https://repository.mulesoft.org/nexus/content/repositories/public </url>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+    <profile>
+      <id>Mule</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <repositories>
+        <repository>
+          <id>MuleRepository</id>
+          <name>MuleRepository</name>
+          <url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee</url>
+          <layout>default</layout>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+</settings>
